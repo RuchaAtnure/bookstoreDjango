@@ -1,0 +1,61 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+header{
+    width: 100%;height:20vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(../images/book3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main{
+    width: 100%;
+    
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-align: center;
+    
+    background-color: lightblue;
+}
+ .menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+section h3{
+    
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+section p{
+    margin: 15px 0px 15px 0px;
+}
+
+header .menu h1{
+    font-size: 50px;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    
+    height: 20vh;
+    background-color: gray;
+   justify-content: center;
+    align-items: center;
+    color:black;
+    text-align: center;
+
+}
+
+.footer p{
+    margin: 15px 0px 15px 0px;
+}

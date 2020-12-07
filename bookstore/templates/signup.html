@@ -1,0 +1,56 @@
+{% load static%}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<form action="signup" method="post">
+        {% csrf_token %}
+  <div class="loginbox">
+    <h1>Sign up</h1>
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+
+      <input type="text" placeholder="Enter username" name="username" value="">
+    </div>
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+
+      <input type="text" placeholder="Enter firstname" name="firstname" value="">
+    </div>
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+
+      <input type="text" placeholder="Enter lastname" name="lastname" value="">
+    </div>
+
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <input type="text" placeholder="Enter email " name="email" value="">
+    </div>
+    
+    <div class="textbox">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Enter Password" name="PASS1" value="">
+    </div>
+    <div class="textbox">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Confirm Password" name="PASS2" value="">
+    </div>
+     <input type="submit"  class="btn" name="" value="Sign up">
+
+</form>
+<div>
+  {% for message in messages %}
+  <h2>
+    {{message}}
+  </h2>
+  {%endfor%}
+</div>
+</div>
+</body>
+
+</html>
